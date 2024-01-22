@@ -1,7 +1,9 @@
+// src/router/index.js
 
 import { createRouter, createWebHistory } from 'vue-router';
 import HelloWorld from '@/components/HelloWorld.vue';
 import RegisterPage from '@/components/RegisterPage.vue';
+import LoginPage from '@/components/LoginPage.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,6 +18,11 @@ const router = createRouter({
       name: 'RegisterPage',
       component: RegisterPage,
     },
+    {
+      path: '/login',
+      name: 'LoginPage',
+      component: LoginPage,
+    }
   ],
 });
 
