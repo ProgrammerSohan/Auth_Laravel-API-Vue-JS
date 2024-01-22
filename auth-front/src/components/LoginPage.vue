@@ -38,7 +38,9 @@ export default {
           try {
             if (data.status === true) {
               alert("Login Successfully");
-              this.$router.push({ name: 'HelloWorld' });
+             // this.$router.push({ name: 'HelloWorld' });
+              this.$router.push({ name: 'SohanPage' });
+
             } else {
               alert("Login failed");
             }
